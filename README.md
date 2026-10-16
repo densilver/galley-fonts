@@ -37,7 +37,7 @@ uv run python scripts/fetch.py [family ...]
 
 Downloads each release archive of the selected families (substrings of family names; none - all) into `tmp/`, checks it against `archive_sha256` and writes the font and license files into `src/galley_pdf_fonts/data/`. An empty `archive_sha256` means the first download: the sum is printed and written into `fonts.toml`. An archive already in `tmp/` is not downloaded again. A new release - new `release_url`, `member`, `version` and an empty `archive_sha256`.
 
-An unavailable download (HTTP error, network) of an archive, a release file or a license text prints `FAIL <url>: <error>`, the script goes on to the next release and exits with code 1, as on a sum mismatch.
+An unavailable download (HTTP error, network) or a connection broken while reading the response prints `FAIL <url>: <error>`, removes the partial file and exits with code 1, as on a sum mismatch. On an archive or a release file the script goes on to the next release; on a license text of a release of one file the other license texts of the release are still written, then the release status line is printed.
 
 A release of one file: a `release_url` starting with `https://raw.githubusercontent.com/` is the font file itself, pinned by the commit in the URL. It is cached in `tmp/raw/<URL path>`, `archive_sha256` is the sum of this file, `member` is the file name from the URL, and the file is written to `file` as is. The license files of such an entry are taken by name from the same directory of the URL, into the same cache, without a sum of their own.
 

@@ -1,9 +1,9 @@
 import argparse
 import hashlib
+import http.client
 import sys
 import tarfile
 import tomllib
-import urllib.error
 import urllib.request
 import zipfile
 from dataclasses import dataclass
@@ -68,7 +68,7 @@ def download(url: str, target: Path) -> str | None:
         with urllib.request.urlopen(url) as response, partial.open("wb") as out:
             while chunk := response.read(1 << 20):
                 out.write(chunk)
-    except urllib.error.URLError as error:
+    except (OSError, http.client.HTTPException) as error:
         partial.unlink(missing_ok=True)
         return f"{url}: {error}"
     partial.rename(target)
