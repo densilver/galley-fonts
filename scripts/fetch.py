@@ -3,6 +3,7 @@ import hashlib
 import sys
 import tarfile
 import tomllib
+import urllib.error
 import urllib.request
 import zipfile
 from dataclasses import dataclass
@@ -60,13 +61,18 @@ def archive_path(url: str) -> Path:
     return TMP / Path(urlparse(url).path).name
 
 
-def download(url: str, target: Path) -> None:
+def download(url: str, target: Path) -> str | None:
     target.parent.mkdir(parents=True, exist_ok=True)
     partial = target.with_name(target.name + ".part")
-    with urllib.request.urlopen(url) as response, partial.open("wb") as out:
-        while chunk := response.read(1 << 20):
-            out.write(chunk)
+    try:
+        with urllib.request.urlopen(url) as response, partial.open("wb") as out:
+            while chunk := response.read(1 << 20):
+                out.write(chunk)
+    except urllib.error.URLError as error:
+        partial.unlink(missing_ok=True)
+        return f"{url}: {error}"
     partial.rename(target)
+    return None
 
 
 def sha256(path: Path) -> str:
@@ -147,7 +153,10 @@ def place_raw(entries: list[Entry], path: Path, url: str) -> list[str]:
         license_url = f"{folder}/{basename(relative)}"
         cached = raw_path(license_url)
         if not cached.exists():
-            download(license_url, cached)
+            error = download(license_url, cached)
+            if error is not None:
+                errors.append(error)
+                continue
         write_data(relative, cached.read_bytes())
     return errors
 
@@ -196,7 +205,11 @@ def main() -> int:
         path = archive_path(url)
         source = "cached"
         if not path.exists():
-            download(url, path)
+            error = download(url, path)
+            if error is not None:
+                print(f"FAIL {error}")
+                failed = True
+                continue
             source = "downloaded"
         actual = sha256(path)
         if not recorded:
