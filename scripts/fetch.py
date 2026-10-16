@@ -43,12 +43,25 @@ def load_entries() -> list[Entry]:
     ]
 
 
+RAW_PREFIX = "https://raw.githubusercontent.com/"
+
+
+def is_raw(url: str) -> bool:
+    return url.startswith(RAW_PREFIX)
+
+
+def raw_path(url: str) -> Path:
+    return TMP / "raw" / urlparse(url).path.lstrip("/")
+
+
 def archive_path(url: str) -> Path:
+    if is_raw(url):
+        return raw_path(url)
     return TMP / Path(urlparse(url).path).name
 
 
 def download(url: str, target: Path) -> None:
-    TMP.mkdir(exist_ok=True)
+    target.parent.mkdir(parents=True, exist_ok=True)
     partial = target.with_name(target.name + ".part")
     with urllib.request.urlopen(url) as response, partial.open("wb") as out:
         while chunk := response.read(1 << 20):
@@ -85,8 +98,12 @@ def read_members(path: Path, names: set[str]) -> dict[str, bytes]:
     return found
 
 
+def basename(path: str) -> str:
+    return path.rsplit("/", 1)[-1]
+
+
 def by_basename(names: list[str], name: str) -> list[str]:
-    return [member for member in names if member.rsplit("/", 1)[-1] == name]
+    return [member for member in names if basename(member) == name]
 
 
 def write_data(relative: str, content: bytes) -> None:
@@ -106,7 +123,7 @@ def unpack(entries: list[Entry], path: Path) -> list[str]:
             errors.append(f"{entry.file}: no member {entry.member}")
     licenses = sorted({name for entry in entries for name in entry.license_files})
     for relative in licenses:
-        found = by_basename(names, relative.rsplit("/", 1)[-1])
+        found = by_basename(names, basename(relative))
         if len(found) == 1:
             wanted[relative] = found[0]
         else:
@@ -114,6 +131,24 @@ def unpack(entries: list[Entry], path: Path) -> list[str]:
     contents = read_members(path, set(wanted.values()))
     for relative, member in wanted.items():
         write_data(relative, contents[member])
+    return errors
+
+
+def place_raw(entries: list[Entry], path: Path, url: str) -> list[str]:
+    errors: list[str] = []
+    for entry in entries:
+        if entry.member == basename(url):
+            write_data(entry.file, path.read_bytes())
+        else:
+            errors.append(f"{entry.file}: member {entry.member}, URL file {path.name}")
+    folder = url.rsplit("/", 1)[0]
+    licenses = sorted({name for entry in entries for name in entry.license_files})
+    for relative in licenses:
+        license_url = f"{folder}/{basename(relative)}"
+        cached = raw_path(license_url)
+        if not cached.exists():
+            download(license_url, cached)
+        write_data(relative, cached.read_bytes())
     return errors
 
 
@@ -173,7 +208,7 @@ def main() -> int:
             print(f"FAIL {url}: sha256 {actual}, expected {recorded}")
             failed = True
             continue
-        errors = unpack(group, path)
+        errors = place_raw(group, path, url) if is_raw(url) else unpack(group, path)
         for error in errors:
             print(f"FAIL {error}")
         failed = failed or bool(errors)

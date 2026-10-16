@@ -536,3 +536,102 @@ release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/
 archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
 license = "GUST-Font-License-1.0"
 license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "PT Serif"
+style = "regular"
+file = "pt-serif/PT_Serif-Web-Regular.ttf"
+member = "PT_Serif-Web-Regular.ttf"
+version = "1.000W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptserif/PT_Serif-Web-Regular.ttf"
+archive_sha256 = "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a"
+license = "OFL-1.1"
+license_files = ["pt-serif/OFL.txt"]
+
+[[font]]
+family = "PT Serif"
+style = "bold"
+file = "pt-serif/PT_Serif-Web-Bold.ttf"
+member = "PT_Serif-Web-Bold.ttf"
+version = "1.000W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptserif/PT_Serif-Web-Bold.ttf"
+archive_sha256 = "038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e"
+license = "OFL-1.1"
+license_files = ["pt-serif/OFL.txt"]
+
+[[font]]
+family = "PT Serif"
+style = "italic"
+file = "pt-serif/PT_Serif-Web-Italic.ttf"
+member = "PT_Serif-Web-Italic.ttf"
+version = "1.000W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptserif/PT_Serif-Web-Italic.ttf"
+archive_sha256 = "f57e95ff9dc85691a3b2e193f2028db36f6663939a46c0fc4f286d618b80b7ce"
+license = "OFL-1.1"
+license_files = ["pt-serif/OFL.txt"]
+
+[[font]]
+family = "PT Serif"
+style = "bold-italic"
+file = "pt-serif/PT_Serif-Web-BoldItalic.ttf"
+member = "PT_Serif-Web-BoldItalic.ttf"
+version = "1.000W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptserif/PT_Serif-Web-BoldItalic.ttf"
+archive_sha256 = "f003788ba08981eb0988b3557a6f224a53dab49c20e283e8b74d5af3c466f8be"
+license = "OFL-1.1"
+license_files = ["pt-serif/OFL.txt"]
+
+[[font]]
+family = "PT Sans"
+style = "regular"
+file = "pt-sans/PT_Sans-Web-Regular.ttf"
+member = "PT_Sans-Web-Regular.ttf"
+version = "2.003W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptsans/PT_Sans-Web-Regular.ttf"
+archive_sha256 = "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a"
+license = "OFL-1.1"
+license_files = ["pt-sans/OFL.txt"]
+
+[[font]]
+family = "PT Sans"
+style = "bold"
+file = "pt-sans/PT_Sans-Web-Bold.ttf"
+member = "PT_Sans-Web-Bold.ttf"
+version = "2.003W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptsans/PT_Sans-Web-Bold.ttf"
+archive_sha256 = "3128bd5ecf01816e59a23d54c57a7a6b14615b07db53ff277c77376010265b05"
+license = "OFL-1.1"
+license_files = ["pt-sans/OFL.txt"]
+
+[[font]]
+family = "PT Sans"
+style = "italic"
+file = "pt-sans/PT_Sans-Web-Italic.ttf"
+member = "PT_Sans-Web-Italic.ttf"
+version = "2.003W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptsans/PT_Sans-Web-Italic.ttf"
+archive_sha256 = "5a90fe2d0cd798700935240580bdcc12c0ffc9102c0c7163b3418e13bc21debd"
+license = "OFL-1.1"
+license_files = ["pt-sans/OFL.txt"]
+
+[[font]]
+family = "PT Sans"
+style = "bold-italic"
+file = "pt-sans/PT_Sans-Web-BoldItalic.ttf"
+member = "PT_Sans-Web-BoldItalic.ttf"
+version = "2.003W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptsans/PT_Sans-Web-BoldItalic.ttf"
+archive_sha256 = "81ac221cdd02bccfa679c74adb122478e9d092e65a722e31ca11469961483785"
+license = "OFL-1.1"
+license_files = ["pt-sans/OFL.txt"]
+
+[[font]]
+family = "PT Mono"
+style = "regular"
+file = "pt-mono/PTM55FT.ttf"
+member = "PTM55FT.ttf"
+version = "1.001W"
+release_url = "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ptmono/PTM55FT.ttf"
+archive_sha256 = "cbe732b3b8fd211fd986ebdfc9b870ddeca4faab0bb5425fc509b37f9b4ac804"
+license = "OFL-1.1"
+license_files = ["pt-mono/OFL.txt"]
