@@ -1,0 +1,12 @@
+Licensing of this repository
+
+Fonts and their license files under src/galley_pdf_fonts/data/<family>/ are
+not covered by this file: each font is under its own license, whose text from
+the font release lies in the same directory and is named in the license field
+of its entry in src/galley_pdf_fonts/data/fonts.toml (OFL-1.1, Bitstream Vera
+and Arev licenses with public domain changes, GUST Font License).
+
+The code of this repository - src/galley_pdf_fonts/__init__.py, scripts/,
+tests/, pyproject.toml, fonts.toml and README.md - is under the same terms as
+the galley repository: copyright the galley authors, all rights reserved; no
+license is granted yet.

@@ -1,0 +1,538 @@
+[[font]]
+family = "Liberation Serif"
+style = "regular"
+file = "liberation/LiberationSerif-Regular.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSerif-Regular.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Serif"
+style = "bold"
+file = "liberation/LiberationSerif-Bold.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSerif-Bold.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Serif"
+style = "italic"
+file = "liberation/LiberationSerif-Italic.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSerif-Italic.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Serif"
+style = "bold-italic"
+file = "liberation/LiberationSerif-BoldItalic.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSerif-BoldItalic.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Sans"
+style = "regular"
+file = "liberation/LiberationSans-Regular.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSans-Regular.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Sans"
+style = "bold"
+file = "liberation/LiberationSans-Bold.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSans-Bold.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Sans"
+style = "italic"
+file = "liberation/LiberationSans-Italic.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSans-Italic.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Sans"
+style = "bold-italic"
+file = "liberation/LiberationSans-BoldItalic.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationSans-BoldItalic.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Mono"
+style = "regular"
+file = "liberation/LiberationMono-Regular.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationMono-Regular.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Mono"
+style = "bold"
+file = "liberation/LiberationMono-Bold.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationMono-Bold.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Mono"
+style = "italic"
+file = "liberation/LiberationMono-Italic.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationMono-Italic.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Liberation Mono"
+style = "bold-italic"
+file = "liberation/LiberationMono-BoldItalic.ttf"
+member = "liberation-fonts-ttf-2.1.5/LiberationMono-BoldItalic.ttf"
+version = "2.1.5"
+release_url = "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+archive_sha256 = "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+license = "OFL-1.1"
+license_files = ["liberation/LICENSE", "liberation/AUTHORS"]
+
+[[font]]
+family = "Carlito"
+style = "regular"
+file = "carlito/Carlito-Regular.ttf"
+member = "carlito-3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-Regular.ttf"
+version = "1.104"
+release_url = "https://github.com/googlefonts/carlito/archive/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a.tar.gz"
+archive_sha256 = "ff1fdae06e67136660c7d8135323631c7465c6b4d299d4281bb44eed2165091f"
+license = "OFL-1.1"
+license_files = ["carlito/OFL.txt", "carlito/AUTHORS.txt"]
+
+[[font]]
+family = "Carlito"
+style = "bold"
+file = "carlito/Carlito-Bold.ttf"
+member = "carlito-3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-Bold.ttf"
+version = "1.104"
+release_url = "https://github.com/googlefonts/carlito/archive/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a.tar.gz"
+archive_sha256 = "ff1fdae06e67136660c7d8135323631c7465c6b4d299d4281bb44eed2165091f"
+license = "OFL-1.1"
+license_files = ["carlito/OFL.txt", "carlito/AUTHORS.txt"]
+
+[[font]]
+family = "Carlito"
+style = "italic"
+file = "carlito/Carlito-Italic.ttf"
+member = "carlito-3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-Italic.ttf"
+version = "1.104"
+release_url = "https://github.com/googlefonts/carlito/archive/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a.tar.gz"
+archive_sha256 = "ff1fdae06e67136660c7d8135323631c7465c6b4d299d4281bb44eed2165091f"
+license = "OFL-1.1"
+license_files = ["carlito/OFL.txt", "carlito/AUTHORS.txt"]
+
+[[font]]
+family = "Carlito"
+style = "bold-italic"
+file = "carlito/Carlito-BoldItalic.ttf"
+member = "carlito-3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-BoldItalic.ttf"
+version = "1.104"
+release_url = "https://github.com/googlefonts/carlito/archive/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a.tar.gz"
+archive_sha256 = "ff1fdae06e67136660c7d8135323631c7465c6b4d299d4281bb44eed2165091f"
+license = "OFL-1.1"
+license_files = ["carlito/OFL.txt", "carlito/AUTHORS.txt"]
+
+[[font]]
+family = "Caladea"
+style = "regular"
+file = "caladea/Caladea-Regular.ttf"
+member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-Regular.ttf"
+version = "1.001"
+release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
+archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
+license = "OFL-1.1"
+license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Caladea"
+style = "bold"
+file = "caladea/Caladea-Bold.ttf"
+member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-Bold.ttf"
+version = "1.001"
+release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
+archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
+license = "OFL-1.1"
+license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Caladea"
+style = "italic"
+file = "caladea/Caladea-Italic.ttf"
+member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-Italic.ttf"
+version = "1.001"
+release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
+archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
+license = "OFL-1.1"
+license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Caladea"
+style = "bold-italic"
+file = "caladea/Caladea-BoldItalic.ttf"
+member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-BoldItalic.ttf"
+version = "1.001"
+release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
+archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
+license = "OFL-1.1"
+license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Sans"
+style = "regular"
+file = "noto-sans/NotoSans-Regular.ttf"
+member = "NotoSans/hinted/ttf/NotoSans-Regular.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip"
+archive_sha256 = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
+license = "OFL-1.1"
+license_files = ["noto-sans/OFL.txt", "noto-sans/AUTHORS.txt", "noto-sans/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Sans"
+style = "bold"
+file = "noto-sans/NotoSans-Bold.ttf"
+member = "NotoSans/hinted/ttf/NotoSans-Bold.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip"
+archive_sha256 = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
+license = "OFL-1.1"
+license_files = ["noto-sans/OFL.txt", "noto-sans/AUTHORS.txt", "noto-sans/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Sans"
+style = "italic"
+file = "noto-sans/NotoSans-Italic.ttf"
+member = "NotoSans/hinted/ttf/NotoSans-Italic.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip"
+archive_sha256 = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
+license = "OFL-1.1"
+license_files = ["noto-sans/OFL.txt", "noto-sans/AUTHORS.txt", "noto-sans/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Sans"
+style = "bold-italic"
+file = "noto-sans/NotoSans-BoldItalic.ttf"
+member = "NotoSans/hinted/ttf/NotoSans-BoldItalic.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip"
+archive_sha256 = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
+license = "OFL-1.1"
+license_files = ["noto-sans/OFL.txt", "noto-sans/AUTHORS.txt", "noto-sans/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Serif"
+style = "regular"
+file = "noto-serif/NotoSerif-Regular.ttf"
+member = "NotoSerif/hinted/ttf/NotoSerif-Regular.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.015/NotoSerif-v2.015.zip"
+archive_sha256 = "0e9a43c8a4b94ac76f55069ed1d7385bbcaf6b99527a94deb5619e032b7e76c1"
+license = "OFL-1.1"
+license_files = ["noto-serif/OFL.txt", "noto-serif/AUTHORS.txt", "noto-serif/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Serif"
+style = "bold"
+file = "noto-serif/NotoSerif-Bold.ttf"
+member = "NotoSerif/hinted/ttf/NotoSerif-Bold.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.015/NotoSerif-v2.015.zip"
+archive_sha256 = "0e9a43c8a4b94ac76f55069ed1d7385bbcaf6b99527a94deb5619e032b7e76c1"
+license = "OFL-1.1"
+license_files = ["noto-serif/OFL.txt", "noto-serif/AUTHORS.txt", "noto-serif/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Serif"
+style = "italic"
+file = "noto-serif/NotoSerif-Italic.ttf"
+member = "NotoSerif/hinted/ttf/NotoSerif-Italic.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.015/NotoSerif-v2.015.zip"
+archive_sha256 = "0e9a43c8a4b94ac76f55069ed1d7385bbcaf6b99527a94deb5619e032b7e76c1"
+license = "OFL-1.1"
+license_files = ["noto-serif/OFL.txt", "noto-serif/AUTHORS.txt", "noto-serif/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "Noto Serif"
+style = "bold-italic"
+file = "noto-serif/NotoSerif-BoldItalic.ttf"
+member = "NotoSerif/hinted/ttf/NotoSerif-BoldItalic.ttf"
+version = "2.015"
+release_url = "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.015/NotoSerif-v2.015.zip"
+archive_sha256 = "0e9a43c8a4b94ac76f55069ed1d7385bbcaf6b99527a94deb5619e032b7e76c1"
+license = "OFL-1.1"
+license_files = ["noto-serif/OFL.txt", "noto-serif/AUTHORS.txt", "noto-serif/CONTRIBUTORS.txt"]
+
+[[font]]
+family = "DejaVu Sans"
+style = "regular"
+file = "dejavu/DejaVuSans.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSans.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans"
+style = "bold"
+file = "dejavu/DejaVuSans-Bold.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Bold.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans"
+style = "italic"
+file = "dejavu/DejaVuSans-Oblique.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Oblique.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans"
+style = "bold-italic"
+file = "dejavu/DejaVuSans-BoldOblique.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSans-BoldOblique.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Serif"
+style = "regular"
+file = "dejavu/DejaVuSerif.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSerif.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Serif"
+style = "bold"
+file = "dejavu/DejaVuSerif-Bold.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-Bold.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Serif"
+style = "italic"
+file = "dejavu/DejaVuSerif-Italic.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-Italic.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Serif"
+style = "bold-italic"
+file = "dejavu/DejaVuSerif-BoldItalic.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-BoldItalic.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans Mono"
+style = "regular"
+file = "dejavu/DejaVuSansMono.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans Mono"
+style = "bold"
+file = "dejavu/DejaVuSansMono-Bold.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-Bold.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans Mono"
+style = "italic"
+file = "dejavu/DejaVuSansMono-Oblique.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-Oblique.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "DejaVu Sans Mono"
+style = "bold-italic"
+file = "dejavu/DejaVuSansMono-BoldOblique.ttf"
+member = "dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-BoldOblique.ttf"
+version = "2.37"
+release_url = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+license = "Bitstream-Vera AND Arev AND public-domain"
+license_files = ["dejavu/LICENSE", "dejavu/AUTHORS"]
+
+[[font]]
+family = "Latin Modern Roman"
+style = "regular"
+file = "latin-modern/lmroman10-regular.otf"
+member = "fonts/opentype/public/lm/lmroman10-regular.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Roman"
+style = "bold"
+file = "latin-modern/lmroman10-bold.otf"
+member = "fonts/opentype/public/lm/lmroman10-bold.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Roman"
+style = "italic"
+file = "latin-modern/lmroman10-italic.otf"
+member = "fonts/opentype/public/lm/lmroman10-italic.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Sans"
+style = "regular"
+file = "latin-modern/lmsans10-regular.otf"
+member = "fonts/opentype/public/lm/lmsans10-regular.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Sans"
+style = "bold"
+file = "latin-modern/lmsans10-bold.otf"
+member = "fonts/opentype/public/lm/lmsans10-bold.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Sans"
+style = "italic"
+file = "latin-modern/lmsans10-oblique.otf"
+member = "fonts/opentype/public/lm/lmsans10-oblique.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Mono"
+style = "regular"
+file = "latin-modern/lmmono10-regular.otf"
+member = "fonts/opentype/public/lm/lmmono10-regular.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Mono"
+style = "bold"
+file = "latin-modern/lmmonolt10-bold.otf"
+member = "fonts/opentype/public/lm/lmmonolt10-bold.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
+
+[[font]]
+family = "Latin Modern Mono"
+style = "italic"
+file = "latin-modern/lmmono10-italic.otf"
+member = "fonts/opentype/public/lm/lmmono10-italic.otf"
+version = "2.007"
+release_url = "https://www.gust.org.pl/projects/e-foundry/latin-modern/download/Latin_Modern-TDS_distr-2_007-31_03_2026.zip"
+archive_sha256 = "66d78199854045cad23309542abf09a519c2a3c04160a53ce23abe9c8bd9885a"
+license = "GUST-Font-License-1.0"
+license_files = ["latin-modern/GUST-FONT-LICENSE.txt", "latin-modern/MANIFEST-Latin-Modern.txt", "latin-modern/README-Latin-Modern.txt"]
