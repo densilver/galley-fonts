@@ -3,11 +3,10 @@ Licensing of this repository
 Fonts and their license files under src/galley_pdf_fonts/data/<family>/ are
 not covered by this file: each font is under its own license, named in the
 license field of its entry in src/galley_pdf_fonts/data/fonts.toml (OFL-1.1,
-Apache-2.0, Bitstream Vera and Arev licenses with public domain changes, GUST
-Font License). The license text lies in the same directory as the font: from
-the font release or, for an entry with license_url, downloaded from that URL
-and checked against license_sha256 (Caladea - LICENSE-2.0.txt from
-apache.org).
+Bitstream Vera and Arev licenses with public domain changes, GUST Font
+License). The license text lies in the same directory as the font: from the
+font release or, for an entry with license_url, downloaded from that URL and
+checked against license_sha256.
 
 The code of this repository - src/galley_pdf_fonts/__init__.py, scripts/,
 tests/, pyproject.toml, fonts.toml and README.md - is under the same terms as

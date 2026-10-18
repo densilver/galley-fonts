@@ -13,7 +13,7 @@ Free donor fonts for galley: font programs from official releases, with versions
 |---|---|---|---|---|
 | Liberation Serif, Sans, Mono | 4 each | 2.1.5 | github.com/liberationfonts/liberation-fonts, release 2.1.5 | OFL-1.1 |
 | Carlito | 4 | 1.104 | github.com/googlefonts/carlito, commit 3a810ca (the repo has no releases) | OFL-1.1 |
-| Caladea | 4 | 1.002 | crosextrafonts-20130214.tar.gz from the ChromiumOS distfiles mirror (Google; LibreOffice builds take the same archive); the archive has no license text, it comes from apache.org | Apache-2.0 |
+| Caladea | 4 | 1.001 | github.com/huertatipografica/Caladea, commit 336a529 (the repo has no releases) | OFL-1.1 |
 | Noto Sans, Noto Serif | 4 each | 2.015 | github.com/notofonts/latin-greek-cyrillic, releases NotoSans-v2.015, NotoSerif-v2.015 (hinted TTF) | OFL-1.1 |
 | DejaVu Sans, Serif, Sans Mono | 4 each | 2.37 | github.com/dejavu-fonts/dejavu-fonts, release version_2_37 | Bitstream Vera, Arev, public domain |
 | Latin Modern Roman, Sans, Mono | regular, bold, italic | 2.007 | GUST e-foundry, TDS distribution 2.007 of 2026-03-31 | GUST Font License |
@@ -25,7 +25,7 @@ Not in the package: Liberation Sans Narrow (Liberation Fonts license, GPL-2.0 wi
 
 ## Licenses
 
-Each font keeps its own license; the license texts from the release lie next to the fonts in `src/galley_pdf_fonts/data/<family>/` (OFL.txt, LICENSE, AUTHORS, GUST-FONT-LICENSE.txt and so on); Caladea 1.002 - `LICENSE-2.0.txt` from apache.org. The code of the package - [LICENSE](LICENSE).
+Each font keeps its own license; the license texts from the release lie next to the fonts in `src/galley_pdf_fonts/data/<family>/` (OFL.txt, LICENSE, AUTHORS, GUST-FONT-LICENSE.txt and so on); an entry with `license_url` - the text downloaded from that URL. The code of the package - [LICENSE](LICENSE).
 
 ## Update
 
