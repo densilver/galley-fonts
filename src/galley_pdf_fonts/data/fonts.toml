@@ -178,45 +178,53 @@ license_files = ["carlito/OFL.txt", "carlito/AUTHORS.txt"]
 family = "Caladea"
 style = "regular"
 file = "caladea/Caladea-Regular.ttf"
-member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-Regular.ttf"
-version = "1.001"
-release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
-archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
-license = "OFL-1.1"
-license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+member = "crosextrafonts-20130214/Caladea-Regular.ttf"
+version = "1.002"
+release_url = "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/crosextrafonts-20130214.tar.gz"
+archive_sha256 = "c48d1c2fd613c9c06c959c34da7b8388059e2408d2bb19845dc3ed35f76e4d09"
+license = "Apache-2.0"
+license_files = ["caladea/LICENSE-2.0.txt"]
+license_url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+license_sha256 = "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
 
 [[font]]
 family = "Caladea"
 style = "bold"
 file = "caladea/Caladea-Bold.ttf"
-member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-Bold.ttf"
-version = "1.001"
-release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
-archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
-license = "OFL-1.1"
-license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+member = "crosextrafonts-20130214/Caladea-Bold.ttf"
+version = "1.002"
+release_url = "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/crosextrafonts-20130214.tar.gz"
+archive_sha256 = "c48d1c2fd613c9c06c959c34da7b8388059e2408d2bb19845dc3ed35f76e4d09"
+license = "Apache-2.0"
+license_files = ["caladea/LICENSE-2.0.txt"]
+license_url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+license_sha256 = "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
 
 [[font]]
 family = "Caladea"
 style = "italic"
 file = "caladea/Caladea-Italic.ttf"
-member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-Italic.ttf"
-version = "1.001"
-release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
-archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
-license = "OFL-1.1"
-license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+member = "crosextrafonts-20130214/Caladea-Italic.ttf"
+version = "1.002"
+release_url = "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/crosextrafonts-20130214.tar.gz"
+archive_sha256 = "c48d1c2fd613c9c06c959c34da7b8388059e2408d2bb19845dc3ed35f76e4d09"
+license = "Apache-2.0"
+license_files = ["caladea/LICENSE-2.0.txt"]
+license_url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+license_sha256 = "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
 
 [[font]]
 family = "Caladea"
 style = "bold-italic"
 file = "caladea/Caladea-BoldItalic.ttf"
-member = "Caladea-336a529cfad3d103d6527752686f8331d13e820a/fonts/ttf/Caladea-BoldItalic.ttf"
-version = "1.001"
-release_url = "https://github.com/huertatipografica/Caladea/archive/336a529cfad3d103d6527752686f8331d13e820a.tar.gz"
-archive_sha256 = "959ccb46ba0f24291545ad591b57a33533513578e2132e82354ab54cb7fd6e13"
-license = "OFL-1.1"
-license_files = ["caladea/OFL.txt", "caladea/AUTHOR.txt", "caladea/CONTRIBUTORS.txt"]
+member = "crosextrafonts-20130214/Caladea-BoldItalic.ttf"
+version = "1.002"
+release_url = "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/crosextrafonts-20130214.tar.gz"
+archive_sha256 = "c48d1c2fd613c9c06c959c34da7b8388059e2408d2bb19845dc3ed35f76e4d09"
+license = "Apache-2.0"
+license_files = ["caladea/LICENSE-2.0.txt"]
+license_url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+license_sha256 = "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
 
 [[font]]
 family = "Noto Sans"

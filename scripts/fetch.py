@@ -7,7 +7,7 @@ import tomllib
 import urllib.request
 import zipfile
 from dataclasses import dataclass
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any, cast
 from urllib.parse import urlparse
 
@@ -25,6 +25,8 @@ class Entry:
     release_url: str
     archive_sha256: str
     license_files: tuple[str, ...]
+    license_url: str
+    license_sha256: str
 
 
 def load_entries() -> list[Entry]:
@@ -39,6 +41,8 @@ def load_entries() -> list[Entry]:
             release_url=str(entry["release_url"]),
             archive_sha256=str(entry["archive_sha256"]),
             license_files=tuple(str(name) for name in entry["license_files"]),
+            license_url=str(entry.get("license_url", "")),
+            license_sha256=str(entry.get("license_sha256", "")),
         )
         for entry in entries
     ]
@@ -112,6 +116,16 @@ def by_basename(names: list[str], name: str) -> list[str]:
     return [member for member in names if basename(member) == name]
 
 
+def license_target(entry: Entry) -> str:
+    return str(PurePosixPath(entry.file).parent / basename(entry.license_url))
+
+
+def release_licenses(entries: list[Entry]) -> list[str]:
+    external = {license_target(entry) for entry in entries if entry.license_url}
+    names = {name for entry in entries for name in entry.license_files}
+    return sorted(names - external)
+
+
 def write_data(relative: str, content: bytes) -> None:
     target = DATA / relative
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -127,8 +141,7 @@ def unpack(entries: list[Entry], path: Path) -> list[str]:
             wanted[entry.file] = entry.member
         else:
             errors.append(f"{entry.file}: no member {entry.member}")
-    licenses = sorted({name for entry in entries for name in entry.license_files})
-    for relative in licenses:
+    for relative in release_licenses(entries):
         found = by_basename(names, basename(relative))
         if len(found) == 1:
             wanted[relative] = found[0]
@@ -148,8 +161,7 @@ def place_raw(entries: list[Entry], path: Path, url: str) -> list[str]:
         else:
             errors.append(f"{entry.file}: member {entry.member}, URL file {path.name}")
     folder = url.rsplit("/", 1)[0]
-    licenses = sorted({name for entry in entries for name in entry.license_files})
-    for relative in licenses:
+    for relative in release_licenses(entries):
         license_url = f"{folder}/{basename(relative)}"
         cached = raw_path(license_url)
         if not cached.exists():
@@ -161,14 +173,55 @@ def place_raw(entries: list[Entry], path: Path, url: str) -> list[str]:
     return errors
 
 
-def record_sums(sums: dict[str, str]) -> None:
+def place_license_texts(entries: list[Entry]) -> tuple[list[str], dict[str, str]]:
+    errors: list[str] = []
+    new_sums: dict[str, str] = {}
+    urls = sorted({entry.license_url for entry in entries if entry.license_url})
+    for url in urls:
+        group = [entry for entry in entries if entry.license_url == url]
+        recorded = {entry.license_sha256 for entry in group}
+        if len(recorded) != 1:
+            errors.append(f"{url}: entries disagree on license_sha256")
+            continue
+        expected = recorded.pop()
+        targets = sorted({license_target(entry) for entry in group})
+        missing = [
+            entry.file
+            for entry in group
+            if license_target(entry) not in entry.license_files
+        ]
+        if missing:
+            errors.extend(f"{name}: {url} not in license_files" for name in missing)
+            continue
+        cached = raw_path(url)
+        if not cached.exists():
+            error = download(url, cached)
+            if error is not None:
+                errors.append(error)
+                continue
+        actual = sha256(cached)
+        if not expected:
+            new_sums[url] = actual
+            status = "new"
+        elif expected == actual:
+            status = "match"
+        else:
+            errors.append(f"{url}: sha256 {actual}, expected {expected}")
+            continue
+        for target in targets:
+            write_data(target, cached.read_bytes())
+        print(f"license {status} {actual} {cached.name}")
+    return errors, new_sums
+
+
+def record_sums(url_field: str, sum_field: str, sums: dict[str, str]) -> None:
     lines = CATALOG.read_text(encoding="utf-8").split("\n")
     url = ""
     for index, line in enumerate(lines):
-        if line.startswith("release_url = "):
-            url = line.removeprefix("release_url = ").strip('"')
-        if line == 'archive_sha256 = ""' and url in sums:
-            lines[index] = f'archive_sha256 = "{sums[url]}"'
+        if line.startswith(f"{url_field} = "):
+            url = line.removeprefix(f"{url_field} = ").strip('"')
+        if line == f'{sum_field} = ""' and url in sums:
+            lines[index] = f'{sum_field} = "{sums[url]}"'
     CATALOG.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -194,6 +247,7 @@ def main() -> int:
         if any(chosen.release_url == entry.release_url for chosen in selected):
             releases.setdefault(entry.release_url, []).append(entry)
     new_sums: dict[str, str] = {}
+    new_license_sums: dict[str, str] = {}
     failed = False
     for url, group in releases.items():
         expected = {entry.archive_sha256 for entry in group}
@@ -222,12 +276,17 @@ def main() -> int:
             failed = True
             continue
         errors = place_raw(group, path, url) if is_raw(url) else unpack(group, path)
+        license_errors, license_sums = place_license_texts(group)
+        errors.extend(license_errors)
+        new_license_sums.update(license_sums)
         for error in errors:
             print(f"FAIL {error}")
         failed = failed or bool(errors)
         print(f"{status} {source} {actual} {path.name}: {len(group)} fonts")
     if new_sums:
-        record_sums(new_sums)
+        record_sums("release_url", "archive_sha256", new_sums)
+    if new_license_sums:
+        record_sums("license_url", "license_sha256", new_license_sums)
     return 1 if failed else 0
 
 
