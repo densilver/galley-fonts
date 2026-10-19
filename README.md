@@ -25,7 +25,7 @@ Not in the package: Liberation Sans Narrow (Liberation Fonts license, GPL-2.0 wi
 
 ## Licenses
 
-Each font keeps its own license; the license texts from the release lie next to the fonts in `src/galley_pdf_fonts/data/<family>/` (OFL.txt, LICENSE, AUTHORS, GUST-FONT-LICENSE.txt and so on); an entry with `license_url` - the text downloaded from that URL. The code of the package - [LICENSE](LICENSE).
+Each font keeps its own license; the license texts from the release lie next to the fonts in `src/galley_pdf_fonts/data/<family>/` (OFL.txt, LICENSE, AUTHORS, GUST-FONT-LICENSE.txt and so on); an entry with `license_url` - the text downloaded from that URL. The code of the package is under the MIT License - [LICENSE](LICENSE).
 
 ## Update
 

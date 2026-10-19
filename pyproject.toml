@@ -2,6 +2,31 @@
 name = "galley-pdf-fonts"
 version = "0.1.0"
 requires-python = ">=3.12"
+license = "MIT AND OFL-1.1 AND Bitstream-Vera AND LicenseRef-Arev AND LicenseRef-Public-Domain AND LicenseRef-GUST-Font-License"
+license-files = [
+    "LICENSE",
+    "src/galley_pdf_fonts/data/caladea/AUTHOR.txt",
+    "src/galley_pdf_fonts/data/caladea/CONTRIBUTORS.txt",
+    "src/galley_pdf_fonts/data/caladea/OFL.txt",
+    "src/galley_pdf_fonts/data/carlito/AUTHORS.txt",
+    "src/galley_pdf_fonts/data/carlito/OFL.txt",
+    "src/galley_pdf_fonts/data/dejavu/AUTHORS",
+    "src/galley_pdf_fonts/data/dejavu/LICENSE",
+    "src/galley_pdf_fonts/data/latin-modern/GUST-FONT-LICENSE.txt",
+    "src/galley_pdf_fonts/data/latin-modern/MANIFEST-Latin-Modern.txt",
+    "src/galley_pdf_fonts/data/latin-modern/README-Latin-Modern.txt",
+    "src/galley_pdf_fonts/data/liberation/AUTHORS",
+    "src/galley_pdf_fonts/data/liberation/LICENSE",
+    "src/galley_pdf_fonts/data/noto-sans/AUTHORS.txt",
+    "src/galley_pdf_fonts/data/noto-sans/CONTRIBUTORS.txt",
+    "src/galley_pdf_fonts/data/noto-sans/OFL.txt",
+    "src/galley_pdf_fonts/data/noto-serif/AUTHORS.txt",
+    "src/galley_pdf_fonts/data/noto-serif/CONTRIBUTORS.txt",
+    "src/galley_pdf_fonts/data/noto-serif/OFL.txt",
+    "src/galley_pdf_fonts/data/pt-mono/OFL.txt",
+    "src/galley_pdf_fonts/data/pt-sans/OFL.txt",
+    "src/galley_pdf_fonts/data/pt-serif/OFL.txt",
+]
 dependencies = []
 
 [build-system]
